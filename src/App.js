@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ExtReact, Container, Button } from "@sencha/ext-react-modern";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ExtReact>
+      <Container layout="vbox" padding="20">
+        <h1>Welcome to HR Tool</h1>
+        <Button text="Click Me" handler={() => alert("Hello from Ext JS!")} />
+      </Container>
+    </ExtReact>
   );
 }
 
 export default App;
+
+
+
